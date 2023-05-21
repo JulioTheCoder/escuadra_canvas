@@ -1,0 +1,23 @@
+<canvas width="500" height="500"></canvas>
+
+<script>
+  var pantalla = document.querySelector("canvas");
+  var pincel = pantalla.getContext("2d");
+  //Primer triángulo
+  pincel.beginPath();
+  pincel.moveTo(50, 50);
+  pincel.lineTo(50, 400);
+  pincel.lineTo(400, 400);
+  pincel.closePath();
+  pincel.fillStyle = "black"
+  pincel.fill();
+
+  //Segundo triángulo
+  pincel.beginPath();
+  pincel.moveTo(100, 175);
+  pincel.lineTo(100, 350);
+  pincel.lineTo(275, 350);
+  pincel.closePath();
+  pincel.fillStyle = "white"
+  pincel.fill();
+</script>
